@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.header-img {
+    width: 40px;
+}
+
+.header-nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #111;
+    margin: 0px 20px;
+}
