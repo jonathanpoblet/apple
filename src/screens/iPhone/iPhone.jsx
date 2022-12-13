@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '../../components/Cards/Card.jsx';
 import { iphones } from '../../products/iphones.js';
 
-
 import './iphone.css';
 
 const IPhone = () => {
@@ -23,6 +22,7 @@ const IPhone = () => {
                                 name={ iphone.product }
                                 image={ iphone.image }
                                 price={ iphone.price }
+                                endpoint={ iphone.endpoint }
                                 key={ index }
                             />
                         );
