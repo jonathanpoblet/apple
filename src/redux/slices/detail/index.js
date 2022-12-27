@@ -3,17 +3,19 @@ import { createSlice } from "@reduxjs/toolkit";
 export const detailSlice = createSlice({
     name: 'detail',
     initialState: {
-        product: '',
+        name: '',
         price: '',
-        description: '',
+        image: '',
+        memory: [],
         colors: []
     },
     reducers: {
         setDetailPage: (state,action) => {
-            state.product = action.payload;
-            state.price = action.payload;
-            state.description = action.payload;
-            state.colors = action.payload
+            state.name = action.payload.name;
+            state.price = action.payload.price;
+            state.image = action.payload.image;
+            state.memory = action.payload.memory;
+            state.colors = action.payload.colors;
         }
     }
 })

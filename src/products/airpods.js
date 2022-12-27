@@ -1,12 +1,16 @@
 export const airpods = [
     {
         "product" : "Airpods 2",
-        "image" : "https://media.istockphoto.com/id/1204039347/es/foto/apple-airpods-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=KXslUfxd8AsA2bKrYHUosGoehqKnBmMXk1TuE4ngF7A=",
-        "price" : 20
+        "image" : "https://www.macstation.com.ar/img/productos/small/1407-apple-airpods-2.jpg",
+        "price" : 20,
+        "memory": [],
+        "colors" : ["White", "Plat", "Black"]
     },
     {
         "product" : "Airpods 3",
-        "image" : "https://www.cnet.com/a/img/resize/b5902505248851d2d3a7232630f70f1f8dee2876/hub/2021/10/18/89a6adb7-ffcf-4d0f-8287-297df0b1a795/apple-airpods-3rd-generation-2021-14.png?auto=webp&width=1200",
-        "price" : 30
+        "image" : "https://res.cloudinary.com/grover/image/upload/f_webp,q_auto/b_white,c_pad,dpr_2.0,h_500,w_520/f_auto,q_auto/v1637246764/blrx4av8syzwa3mt1dci.png",
+        "price" : 30,
+        "memory": [],
+        "colors" : ["White", "Plat", "Black"]
     }
 ]
