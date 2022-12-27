@@ -8,20 +8,22 @@ const AirPods = () => {
     return (
         <div className='airpods'> 
             <h1 className='airpods-title'>
-                Think different.
+            Sometimes life hits you in the head with a brick. Don't lose faith.
             </h1>
             <h2 className='airpods-title-person'>
-                - Apple
+                - Steve Jobs
             </h2>
-            <hr/>
+            <hr className='hr-airpods'/>
             <div className='airpods-products'>
                 {
-                    airpods.map(( iphone,index ) => {
+                    airpods.map(( airpods,index ) => {
                         return(
                             <Card
-                                name={ iphone.product }
-                                image={ iphone.image }
-                                price={ iphone.price }
+                                name={ airpods.product }
+                                image={ airpods.image }
+                                price={ airpods.price }
+                                memory={ airpods.memory }
+                                colors= { airpods.colors }
                                 key={ index }
                             />
                         );

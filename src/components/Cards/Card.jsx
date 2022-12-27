@@ -1,8 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { setDetailPage } from '../../redux/slices/detail';
 import './card.css'
 
-const Card = ({ name, price, image, endpoint }) => {
+const Card = ({ name, price, image, colors, memory}) => {
+    const info = {
+        name: name,
+        price: price,
+        image: image,
+        memory: memory,
+        colors: colors
+    };
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate()
+
     return (
         <div className='card'>
             <img className='card-img'
@@ -12,11 +25,14 @@ const Card = ({ name, price, image, endpoint }) => {
                 <h3 className='card-body-title'>{ name }</h3>
                 <h5 className='card-body-price'>${ price }</h5>
                 <div>
-                    <Link 
+                    <button 
                         className='card-body-container-buttons'
-                        to='/detail'>
+                        to='/detail'
+                        onClick={() => {
+                            dispatch(setDetailPage(info)) 
+                            navigate('/detail')}}>
                         Detail
-                    </Link>
+                    </button>
                 </div>
             </div>
         </div>

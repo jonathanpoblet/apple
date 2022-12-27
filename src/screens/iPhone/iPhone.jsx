@@ -13,7 +13,7 @@ const IPhone = () => {
             <h2 className='iphone-title-person'>
                 - Apple
             </h2>
-            <hr/>
+            <hr className='hr-iphone'/>
             <div className='iphone-products'>
                 {
                     iphones.map(( iphone,index ) => {
@@ -22,7 +22,8 @@ const IPhone = () => {
                                 name={ iphone.product }
                                 image={ iphone.image }
                                 price={ iphone.price }
-                                endpoint={ iphone.endpoint }
+                                memory={ iphone.memory }
+                                colors= { iphone.colors }
                                 key={ index }
                             />
                         );
