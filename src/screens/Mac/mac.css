@@ -25,7 +25,7 @@
     opacity: 0.8;
 }
 
-hr {
+.hr-mac {
     width: 100%;
     margin-top: 176px;
     opacity: 0.3;
@@ -37,4 +37,14 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width:570px) {
+    .macs-title {
+        font-size: 25px;
+        padding: 0px 30px 20px 30px;
+    }
+    .hr-mac {
+        margin-top: 80px;
+    }
 }
