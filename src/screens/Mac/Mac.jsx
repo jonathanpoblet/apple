@@ -13,7 +13,7 @@ const Mac = () => {
             <h2 className='macs-title-person'>
                 - Steve Jobs
             </h2>
-            <hr/>
+            <hr className='hr-mac'/>
             <div className='macs-products'>
                 {
                     macs.map(( mac, index ) => {
@@ -22,6 +22,8 @@ const Mac = () => {
                                 name={ mac.product }
                                 image={ mac.image }
                                 price={ mac.price }
+                                memory={ mac.memory }
+                                colors= { mac.colors }
                                 key={ index }
                             />
                         );

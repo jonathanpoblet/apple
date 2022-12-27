@@ -1,7 +1,6 @@
 import React from 'react';
 import { prominents } from '../../products/prominents.js'
 import Card from '../../components/Cards/Card.jsx';
-import image from '../../assets/iphones/iphone14promaxgold.png'
 import './home.css';
 
 const Home = () => {
@@ -13,7 +12,7 @@ const Home = () => {
             <h2 className='home-title-person'>
                 - Steve Jobs
             </h2>
-            <hr/>
+            <hr className='hr-home'/>
             <div className='home-products'>
                 {
                     prominents.map(( prominent,index ) => {
@@ -22,6 +21,8 @@ const Home = () => {
                                 name={ prominent.product }
                                 image={ prominent.image }
                                 price={ prominent.price }
+                                memory={ prominent.memory }
+                                colors= { prominent.colors }
                                 key= { index }
                             />
                         );
