@@ -2,6 +2,7 @@
   "name": "apple",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://jonathanpoblet.github.io/apple",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "gh-pages": "^4.0.0",
