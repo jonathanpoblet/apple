@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/apple/static/css/main.ecdfcc71.css",
+    "main.js": "/apple/static/js/main.eb82767b.js",
+    "static/media/applelogo.png": "/apple/static/media/applelogo.95fdd1bc9f06898f1ee8.png",
+    "static/media/iphone14promaxgold.png": "/apple/static/media/iphone14promaxgold.79cc17bbc87d67c02584.png",
+    "index.html": "/apple/index.html",
+    "main.ecdfcc71.css.map": "/apple/static/css/main.ecdfcc71.css.map",
+    "main.eb82767b.js.map": "/apple/static/js/main.eb82767b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecdfcc71.css",
+    "static/js/main.eb82767b.js"
+  ]
+}
