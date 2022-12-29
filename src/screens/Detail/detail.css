@@ -103,6 +103,10 @@
         width: 300px;
         height: 550px;
     }
+    .detail-img {
+        height: 600px;
+
+    }
     .detail-info-title {
         font-size: 20px;
         font-weight: 500;

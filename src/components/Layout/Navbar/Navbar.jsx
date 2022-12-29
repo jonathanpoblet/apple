@@ -28,7 +28,7 @@ const Navbar = () => {
 
             <div className='header-mobile'>
                 <div className='header-mobile-container'>
-                    <Link className='header-nav-link' to= '../'>
+                    <Link className='header-nav-link' to= '../apple'>
                         <img src={ Logo } alt='logo' className='header-img' />
                     </Link>
                     <div className='header-nav-mobile'>
