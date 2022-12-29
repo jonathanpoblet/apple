@@ -20,7 +20,7 @@ const CartTable = ({ products }) => {
                     <th scope="col">Memory</th>
                     <th scope="col">Color</th>
                     <th scope="col">Price</th>
-                    <th scope="col"></th>
+                    <th scope="col" className='table-trash'></th>
                 </tr>
             </thead>
             <tbody>
@@ -34,7 +34,7 @@ const CartTable = ({ products }) => {
                                 <td>{ product.memory? product.memory : 'Without Memory' }</td>
                                 <td>{ product.colors }</td>
                                 <td>${ product.price }</td>
-                                <td>
+                                <td className='table-trash'>
                                     <Trash className='trash' key={index} onClick={() => dispatch(DeleteProduct(index))}/>
                                 </td>
                             </tr>

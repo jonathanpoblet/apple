@@ -59,7 +59,7 @@ thead {
         height: 70px;
     }
     td, th {
-        width: 70px;    
+        width: 80px;    
     }
     .disappear {
         display: none;
@@ -72,5 +72,8 @@ thead {
     }
     .disappear2 {
         display: none;
+    }
+    .table-trash {
+         width: 40px;
     }
 }
