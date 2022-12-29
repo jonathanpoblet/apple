@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
             <div className='header'>
-                <Link className='header-nav-link' to= '../'>
+                <Link className='header-nav-link' to= '../apple'>
                     <img src={ Logo } alt='logo' className='header-img' />
                 </Link>
                 <div className='header-nav'>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 
 import { Trash } from 'react-bootstrap-icons';
@@ -9,16 +9,6 @@ import './cart.css'
 const CartTable = ({ products }) => {
     
     const dispatch = useDispatch();
-    const [total,setTotal] = useState(0);
-    
-    useEffect(() => {
-        let  initialTotal = 0;
-        for (const product of products) {
-            initialTotal += product.price;
-        }
-        setTotal(initialTotal)
-
-    }, [products]);
 
     return (
         <table className="table">
@@ -52,7 +42,6 @@ const CartTable = ({ products }) => {
                     })
                 }
             </tbody>
-            <h3>Total: ${total} </h3>
         </table>
     );
 }

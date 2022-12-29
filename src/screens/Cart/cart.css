@@ -24,9 +24,13 @@
 }
 
 .cart-buy {
-    margin: 50px;
+    margin: 20px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.total {
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 570px) {
@@ -34,3 +38,4 @@
         margin-top: 50px;
     }
 }
+

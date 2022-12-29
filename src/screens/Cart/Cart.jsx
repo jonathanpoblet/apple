@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState,useEffect } from 'react';
 import { useSelector,useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import CartTable from '../../components/Cart/CartTable';
@@ -12,6 +12,18 @@ const Cart = () => {
     const products = useSelector(state => state.cart.cart);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
+    const [total,setTotal] = useState(0);
+    
+    useEffect(() => {
+        let  initialTotal = 0;
+        for (const product of products) {
+            initialTotal += product.price;
+        }
+        setTotal(initialTotal)
+
+    }, [products]);
+
     return (
         <div className='cart'>
             <h1 className='cart-title'>Cart</h1>
@@ -19,6 +31,7 @@ const Cart = () => {
                 products.length > 0 ?
                     <>
                         <CartTable products={ products }/>
+                        <h3 className='total'>Total: ${total} </h3>
                         <button 
                             onClick={() => {
                                 Swal.fire({
@@ -28,12 +41,13 @@ const Cart = () => {
                                 })
                                 setTimeout(() => {
                                     dispatch(ResetCart());
-                                    navigate('/')
-                                },2000)
+                                    navigate('/apple')
+                                },1500)
                             }}
                             className='cart-buy'>
                             Buy
                         </button>
+
                     </>
                     :
                     <h2>NO PRODUCTS IN CART, PLEASE ADD</h2>

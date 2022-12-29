@@ -14,7 +14,7 @@ const Stack = () => {
             <Layout>
                 <Routes>
                     <Route
-                        path='/'
+                        path='/apple'
                         element={ <Home /> }
                     />
                     <Route
