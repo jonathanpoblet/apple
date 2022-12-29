@@ -31,7 +31,7 @@ const CartTable = ({ products }) => {
                                 <th className='disappear' scope="row">{index + 1}</th>
                                 <td className='disappear2'><img className='cart-img' src={ product.image } alt={ product.name }/></td>
                                 <td>{ product.name }</td>
-                                <td>{ product.memory? product.memory : 'Without Memory' }</td>
+                                <td>{ product.memory? product.memory : '-' }</td>
                                 <td>{ product.colors }</td>
                                 <td>${ product.price }</td>
                                 <td className='table-trash'>
