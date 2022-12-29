@@ -5,7 +5,7 @@
 --------
 
 ## Proyect Description
-This is a ecommerce based of the company "Apple". The idea is to have a minimalist desing like apple, a company that focus in quality and no in quantity, respecting the colors of the business
+This is a ecommerce based on the company "Apple". The idea is to have a minimalist desing like apple, a company that focus in quality and no in quantity, respecting the colors of the business
 
 --------
 
